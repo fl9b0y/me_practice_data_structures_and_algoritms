@@ -10,7 +10,7 @@ for i in range(n-1):
     swap_bool = False # im using this just so that memory is not wasted if its already sorted
     # Inner loop that actually swaps the values 
     # The reason for the -1 is because we dont want to go above the index of the list
-    # The reason for the n-1 is because after we finish the first sort there is no need to to look at the last value
+    # The reason for the n-i is because after we finish the first sort there is no need to to look at the last value
     for j in range(n-i-1):
         if mylist[j] < mylist[j+1]:
             mylist[j],mylist[j+1] = mylist[j+1],mylist[j] # simple way of swapping values 
